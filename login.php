@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
             $_SESSION['user_name'] = $user['name'];  // Simpan nama user dalam session
 
             // Redirect ke halaman user setelah login
-            header("Location: HalamanUser.php");
+            header("Location: index.php");
             exit();
         } else {
             echo "Password salah. Silakan coba lagi.";
